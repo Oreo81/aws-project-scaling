@@ -15,6 +15,13 @@ systemctl start docker
 # Cloner le repository GitHub contenant les fichiers nécessaires
 git clone https://github.com/Oreo81/aws-project-scaling.git /opt/aws-project-scaling/
 
+
+chown -R ec2-user:ec2-user /opt/aws-project-scaling/monitoring
+chown -R 472:472 /opt/aws-project-scaling/monitoring/grafana/data
+chown -R 472:472 /opt/aws-project-scaling/monitoring/grafana
+chmod -R 755 /opt/aws-project-scaling/monitoring/grafana/data
+
+
 # Lancer Docker Compose
-cd /opt/aws-project-scaling/monitoring/monitoring
+cd /opt/aws-project-scaling/monitoring
 docker-compose up -d
