@@ -4,7 +4,7 @@ global:
 scrape_configs:
   - job_name: "ec2-node"
     ec2_sd_configs:
-      - region: eu-west-1         # adapter à ton AWS
+      - region: eu-west-3         # adapter à ton AWS
         access_key: ""            # facultatif si IAM Role
         secret_key: ""            # facultatif si IAM Role
         port: 9100                # Node Exporter
