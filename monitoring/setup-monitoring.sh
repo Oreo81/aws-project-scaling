@@ -13,8 +13,8 @@ systemctl enable docker
 systemctl start docker
 
 # Cloner le repository GitHub contenant les fichiers nécessaires
-git clone https://github.com/ton-utilisateur/monitoring-setup.git /opt/monitoring
+git clone https://github.com/Oreo81/aws-project-scaling.git /opt/aws-project-scaling/
 
 # Lancer Docker Compose
-cd /opt/monitoring
+cd /opt/aws-project-scaling/monitoring/monitoring
 docker-compose up -d
